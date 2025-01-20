@@ -1,0 +1,25 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+  width: 500px; /* Explicitly set width for the flex container */
+}
+
+.item {
+  width: calc(50% - 10px); /* Example calculation */
+  background-color: lightblue;
+  margin: 5px;
+}
+
+/* OR use different approach to avoid relying on dynamic parent width */
+.item2 {
+  width: 240px; /* Explicit width to avoid calc() issues */
+  background-color: lightcoral;
+  margin: 5px; 
+}
+
+/* Example of nested calc() with proper parenthesis */
+.item3 {
+  width: calc( (100% - 20px) / 2 );
+  background-color: lightgreen;
+  margin: 5px;
+} 
